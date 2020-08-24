@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            width: 128px;
+            height: 32px;
+            margin: 10px;
+            color: white;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+
+        .primary {
+            border: 1px dashed darkviolet;
+            background: violet;
+        }
+
+        .success {
+            border: 1px dashed olivedrab;
+            background: greenyellow;
+        }
+
+        .error {
+            border: 1px dashed crimson;
+            background: lightpink;
+        }
+
+        .primary:hover {
+            background: white;
+            box-shadow: 5px 5px 5px darkviolet;
+            color: darkviolet
+        }
+
+        .success:hover {
+            background: white;
+            box-shadow: 5px 5px 5px olivedrab;
+            color: olivedrab;
+        }
+
+        .error:hover {
+            background: white;
+            box-shadow: 5px 5px 5px crimson;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="primary">Buy Now!</button>
+        <button class="success">Ok! Got it!</button>
+        <button class="error">Delete</button>
+    </div>
+</body>
+</html>
