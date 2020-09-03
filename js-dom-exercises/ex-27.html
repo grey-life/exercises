@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para-border {
+            border: 2px dashed olive;
+            color: lig
+        }
+    </style>
+</head>
+<body>
+    <p id="para-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea temporibus reprehenderit doloremque facere beatae nesciunt necessitatibus, rem cupiditate, aliquid voluptatem! Distinctio nemo 
+    </p>
+    <p id="para-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea temporibus reprehenderit doloremque facere beatae nesciunt necessitatibus, rem cupiditate, aliquid voluptatem! Distinctio nemo pariatur illum a eos obcaecati qui totam!Aperiam
+    </p>
+    <p id="para-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea temporibus reprehenderit doloremque facere beatae nesciunt necessitatibus, 
+    </p>
+    <script>
+        const newPara = document.createElement('p');
+        newPara.textContent = `
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea temporibus reprehenderit doloremque facere beatae nesciunt necessitatibus, rem cupiditate, aliquid voluptatem!
+        `;
+        const para1 = document.getElementById('para-1');
+        const body = document.querySelector('body');
+        body.insertBefore(newPara, para1);
+        body.appendChild(newPara);
+        const paras = document.getElementsByTagName('p');
+        console.log(paras[1].textContent);
+        console.log(paras[1].getAttribute('id'));
+        paras[1].setAttribute('id', 'second-para');
+        paras[1].setAttribute('name', 'Second Paragraph');
+        paras[2].style.backgroundColor = 'crimson';
+        paras[paras.length-1].className += ' para-border';
+        console.log('here');
+    </script>
+</body>
+</html>

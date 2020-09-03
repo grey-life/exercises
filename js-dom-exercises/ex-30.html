@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="first">
+        <input type="number" id="second">
+        <select name="options" id="options">
+            <option value="+" selected>+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <span></span>
+    </form>
+    <script>
+        const first = document.querySelector('#first');
+        const second = document.querySelector('#second');
+        const span = document.querySelector('span');
+        const options = document.getElementById('options');
+        const setSpan = (option) => {
+            switch (option) {
+                case '+' :
+                    span.textContent = (parseInt(first.value) || 0) + (parseInt(second.value) || 0);
+                    break;
+                case '-' :
+                    span.textContent = (parseInt(first.value) || 0) - (parseInt(second.value) || 0);
+                    break;
+                case '*' :
+                    span.textContent = (parseInt(first.value) || 0) * (parseInt(second.value) || 0);
+                    break;
+                case '/' :
+                    span.textContent = (parseInt(first.value) || 0) / (parseInt(second.value) || 0);
+                    break;
+                default:
+                    break;
+            }
+        }
+        first.addEventListener('input', (event) => {
+            setSpan(options.value);
+        });
+        second.addEventListener('input', (event) => {
+            setSpan(options.value);
+        });
+        options.addEventListener('change', (event) => {
+            setSpan(options.value);
+        })
+    </script>
+</body>
+</html>

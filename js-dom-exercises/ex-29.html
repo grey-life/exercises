@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Theme */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .panel-primary {
+            background-color: violet;
+        }
+
+        .panel-success {
+            background-color: greenyellow;
+        }
+        .panel-error {
+            background-color: lightpink;
+        }
+        .panel {
+            width: 50%;
+            border: 1px solid navy;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .panel-heading, .panel-body {
+            padding: 10px;
+        }
+
+        .panel-heading {
+            cursor: pointer;
+            text-align: center;
+            background: blueviolet;
+            color: white;
+        }
+
+        .panel-primary .panel-heading {
+            background-color: orchid;
+        }
+
+        .panel-success .panel-heading {
+            background-color: olivedrab;
+        }
+
+        .panel-error .panel-heading {
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Question 1
+            </div>
+            <div class="panel-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque voluptates et iusto, iure blanditiis est sit impedit, ratione dignissimos aspernatur magni maiores, odio veniam fugiat? Dignissimos accusantium eius minus nulla.
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                Question 2
+            </div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tenetur atque ea quam officiis sequi quaerat alias, autem magnam doloremque ex debitis adipisci sunt obcaecati veniam, vel assumenda saepe nisi?
+            </div>
+        </div>
+        <div class="panel panel-error">
+            <div class="panel-heading">
+                Question 2
+            </div>
+            <div class="panel-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, rem quidem. Animi, labore totam repellendus at ullam facilis facere dolore reiciendis cumque voluptates magni eligendi laborum neque eveniet ea! Rem!
+            </div>
+        </div>
+    </div>
+    <script>
+        const panelHeading = document.querySelectorAll('.panel-heading');
+        const onPanelHeadingClick = function() {
+            const panelBody = event.target.nextElementSibling;
+
+            if (panelBody.style.display === 'none') {
+                panelBody.style.display = 'block';
+            }else {
+                panelBody.style.display = 'none';
+            }
+        }
+        const enableToggle = (panelNode) => {
+            panelNode.onclick = onPanelHeadingClick;
+        }
+        enableToggle(panelHeading[0]);
+    </script>
+</body>
+</html>

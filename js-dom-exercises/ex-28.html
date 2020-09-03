@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nisi quaerat qui saepe, vero quia incidunt
+        iure blanditiis iusto dolore, rem cum pariatur neque laudantium quo dignissimos fugiat aspernatur! Distinctio.
+    </p>
+    <form action="">
+        <label for="">Write something</label>
+        <input type="text" minlength="8">
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        const para = document.querySelector('p');
+        const input = document.querySelector('input');
+        const btn = document.querySelector('button');
+        para.addEventListener('click', function(event) {
+            alert(event.target.textContent);
+        });
+        input.addEventListener('input', function(event) {
+            const node = event.target;
+            if (node.value.length > 7) {
+                node.style.backgroundColor = 'lightgreen';
+            }else {
+                node.style.backgroundColor = 'white';
+            }
+        });
+        btn.addEventListener('click', function (event) {
+            if (input.value.length < 8) {
+                alert('Input should be atleast 8 characters')
+                event.preventDefault();
+            }
+        })
+    </script>
+</body>
+
+</html>
