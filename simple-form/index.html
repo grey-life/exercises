@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2>Hotel booking!</h2>
+            
+            <label for="loc">Location</label>
+            <input type="text" id="loc" name="location">
+        
+
+            <label for="sdate">Start Date</label>
+            <input type="date" id="sdate" name="start-date">
+
+
+            <label for="edate">End Date</label>
+            <input type="date" id="edate" name="end-date">
+            
+            <select name="person-type" value="Adult">
+                <option value="Adult">
+                    Adult
+                </option>
+                <option value="Children">
+                    Children
+                </option>
+            </select>
+            <input type="number" placeholder="Number of people">
+            
+            <button type="submit" class="form-btn">Search</button>
+        </form>
+    </div>
+</body>
+</html>

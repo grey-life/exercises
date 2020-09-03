@@ -1,0 +1,20 @@
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container ul {
+    list-style-type: "→ ";
+}
+
+.container ul li {
+    padding: 8px;
+}
+
+a, a:active, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
