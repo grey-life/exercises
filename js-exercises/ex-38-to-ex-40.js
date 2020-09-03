@@ -90,27 +90,3 @@ const dbsPayroll = new Project( 1001, 'DBS Payroll', 'DBS');
 const intranetDeployment = new Project( 2001, 'Intranet v2 deployment', 'Internal');
 const john = new Employee(1, 'John', 'Web Developer', 'IT', [ dbsPayroll, intranetDeployment ]);
 console.log(john);
-
-// EX-23
-
-const numbers = [ 5, 11, 13, 7, 2, 31, 3, 19, 23, 17, 29 ];
-numbers.sort((a, b) => a - b);
-numbers.sort((a, b) => b - a);
-numbers.push(37);
-numbers.pop();
-numbers.pop();
-console.log(numbers.indexOf(23));
-console.log(numbers.indexOf(41));
-
-// EX-26
-const days = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
-const noOfLetters = []
-days.forEach(day => {
-    console.log(day);
-    noOfLetters.push(day.length);
-});
-console.log(noOfLetters);
-const newDays = days.filter((day) => day.charCodeAt(0) >= 83 && day.charCodeAt(0) <= 90);
-console.log(newDays);
-const sixLetterDays = days.filter(day => day.length === 6);
-console.log(sixLetterDays);
