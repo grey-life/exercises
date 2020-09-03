@@ -1,6 +1,6 @@
 .container {
     width: 40%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 form {
@@ -39,7 +39,12 @@ input {
     color: white;
     padding: 14px 28px;
     margin: 12px 0 8px 0;
-    border: none;
+    border: 1px solid darkorchid;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: white;
+    color:darkorchid;
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Styled Buttons</title>
+    <link rel="stylesheet" href="../css/nav.css">
     <style>
-
         .container {
+            margin-top: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
@@ -58,6 +58,11 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="/exercises/">Back to Homepage</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <button class="primary">Buy Now!</button>
         <button class="success">Ok! Got it!</button>
