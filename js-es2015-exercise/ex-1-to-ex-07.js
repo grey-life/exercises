@@ -82,5 +82,5 @@ console.log(shallowCopy, deepCopy);
 
 // When not to use an arrow function
 /**
- * When defining function inside objects, this will get global context, rather than the object.
+ * When defining function inside objects, 'this' will get global context, rather than the object.
 */
