@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 8px;
+}
+
+.todo {
+    color: lightseagreen;
+    padding: 8px;
+    border: 2px dashed green;
+    border-radius: 4px;
+}
+
+.todo + .todo {
+    margin-top: 8px;
+}
+
+.completed {
+    color: grey;
+    border: 2px dashed grey;
+    text-decoration: line-through;
+}
