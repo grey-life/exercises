@@ -1,7 +1,7 @@
 /exercise-module-system/node_modules
 /typescript-exercises/node_modules
 /js-ajax-exercise/todo-app/node_modules
-/training-handson-1/backend-app/node_modules
-/training-handson-1/frontend-app/node_modules
-/training-handson-1/frontend-app/public/libs
-/training-handson-1/frontend-app/public/js
+/training-handson-01/backend-app/node_modules
+/training-handson-01/frontend-app/node_modules
+/training-handson-01/frontend-app/public/libs
+/training-handson-01/frontend-app/public/js
