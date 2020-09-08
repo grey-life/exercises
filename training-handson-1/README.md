@@ -1,3 +1,14 @@
 # Training Handson 01
 
-> Both backend and frontend app can be started by running command `npm start`
+## Steps to run the backend-app
+
+- Make sure mongodb is running
+- `cd training-handson-1/backend-app`
+- `npm install`
+- `npm start`
+
+## Steps to run the frontend-app
+
+- `cd training-handson-1/frontend-app`
+- `npm install`
+- `npm start`
